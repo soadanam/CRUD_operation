@@ -1,0 +1,17 @@
+.header-main {
+    margin-top: 50px;
+}
+
+.headers-route {
+    color: rgb(3, 3, 121);
+    font-weight: 700;
+    margin-right: 10px;
+    /* background-color: aqua; */
+    text-decoration: none;
+    margin-top: 150px !important;
+    padding-top: 100px !important;
+}
+
+.headers-route:hover {
+    color: red;
+}
