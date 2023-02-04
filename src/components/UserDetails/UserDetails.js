@@ -7,7 +7,7 @@ const UserDetails = () => {
     const [user, setUser] = useState();
 
     useEffect(()=>{
-        fetch(`https://users-data-with-vercel.vercel.app/user/${id}`)
+        fetch(`https://server-soadanam7-gmailcom.vercel.app/user/${id}`)
         .then( res => res.json())
         .then( data => setUser(data))
     } ,[]);

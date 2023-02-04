@@ -9,7 +9,7 @@ const Users = () => {
 
     //fetch for GET API
     useEffect(() => {
-        fetch('https://users-data-with-vercel.vercel.app/users')
+        fetch('https://server-soadanam7-gmailcom.vercel.app/users')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, []);
@@ -20,7 +20,7 @@ const Users = () => {
         const proceed = window.confirm("Are you sure you want to Delete??")
         if (proceed) {
 
-            fetch(`https://users-data-with-vercel.vercel.app/user/${id}`, {
+            fetch(`https://server-soadanam7-gmailcom.vercel.app/user/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
