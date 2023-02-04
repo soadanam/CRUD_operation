@@ -15,7 +15,7 @@ const Update = () => {
 
     //fetch to GET the data to Display.
     useEffect(() => {
-        fetch(`http://localhost:6500/user/update/${id}`)
+        fetch(`https://users-data-with-vercel.vercel.app/user/update/${id}`)
             .then(res => res.json())
             .then(data => {
                 // console.log('Up user id:', id)
@@ -29,7 +29,7 @@ const Update = () => {
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
 
     const onSubmit = myData => {
-        fetch(`http://localhost:6500/user/update/${id}`, {
+        fetch(`https://users-data-with-vercel.vercel.app/user/update/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -46,7 +46,7 @@ const Update = () => {
        // API call by AXIOS //so simple
         // axios({
         //     method: 'POST',
-        //     url: `http://localhost:6500/user/update/${id}`,
+        //     url: `https://users-data-with-vercel.vercel.app/user/update/${id}`,
         //     data: myData
         // })
         // .then(function (response) {

@@ -9,7 +9,7 @@ const AddUser = () => {
     const onSubmit = newUser => {
         // console.log('N U:', newUser);
 
-        fetch('http://localhost:6500/users', {
+        fetch('https://users-data-with-vercel.vercel.app/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
